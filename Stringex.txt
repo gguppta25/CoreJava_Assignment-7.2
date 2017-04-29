@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+public class Stringex {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+        System.out.print("Please enter a Main String: ");
+        String haystack = input.next();
+        Scanner input1 = new Scanner(System.in);
+        System.out.print("Please enter a Sub String : ");
+        String needle1 = input1.next();
+
+	    int index1 = haystack.indexOf(needle1);
+
+	    if (index1 != -1)
+	      System.out.println("The Main contains the substring " + needle1);
+	   else
+	      System.out.println("The Main does not contain the substring " + needle1);
+
+	  }
+	}
